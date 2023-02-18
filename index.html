@@ -14,10 +14,11 @@
 </head>
 <body>
     <header class="sticky-header">
-        <div class="header-logo">
+        <a class="header-logo" href="#">
           <img src="/assets/Onyx_v16_onyx.svg" alt="Logo">
           <h1 class="name">Onyx</h1>
-        </div>
+        </a>
+        
         <a class="download-btn" href="#download">
           <span class="material-symbols-outlined">
             download
@@ -36,8 +37,7 @@
       </section>
 
       <div class="cta">
-        <h1 class="one-line anim">5 services, 1 application</h1>
-        <h1 class="two-lines anim">5 services, </br> 1 application</h1>
+        <h1 class="anim">5 services, 1 application</h1>
         <p>Tous les services de Lyon 1 nécessaires au quotidien réunis dans une application cross-plateforme, légère et moderne.</p>
       </div>
       
@@ -82,8 +82,8 @@
             <h2>Essayez, <div class="anim">c'est open-source :</div></h2>
           </div>
           <div class="bandeau-boutons">
-            <a href="#" class="bouton">Télécharger </br> sur Google Play Store</a>
-            <a href="#" class="bouton">Contribuer </br> sur GitHub</a>
+            <a href="https://play.google.com/store/apps/details?id=com.e.oloid2" class="bouton">Disponible </br> sur Google Play</a>
+            <a href="https://github.com/onyx-lyon1/onyx" class="bouton">Contribuer </br> sur GitHub</a>
             <a href="#" class="bouton">Nous rejoindre </br> sur Discord</a>
           </div>
         </div>
@@ -95,7 +95,7 @@
             <h2>A propos :</h2>
           </div>
           <div class="bandeau-texte">
-            <p>Onyx est une application pour les étudiants, par les étudiants. Nous avons les mêmes soucis : emploi du temps et boîte mail pas adaptés aux mobiles, des informations à aller chercher à plein d'endroits différents... </p>
+            <p>Onyx est une application pour les étudiants, par les étudiants. Nous avons les mêmes soucis : emploi du temps et boite mail pas adaptés aux mobiles, des informations à aller chercher à plein d'endroits différents... </p>
           </br>
             <p>Cette application est basée sur le travail de Clément Hervé sur Oloid, une ancienne application qui avait la même vocation.</p>
           </div>
@@ -113,10 +113,8 @@
    </script>
 
     <script>
-      // Sélectionne tous les éléments à animer
       const texts = document.querySelectorAll('.anim');
 
-      // Crée une instance de IntersectionObserver pour chaque élément à animer
       texts.forEach(text => {
         const observer = new IntersectionObserver((entries) => {
           entries.forEach(entry => {
