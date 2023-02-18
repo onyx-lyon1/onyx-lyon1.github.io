@@ -1,147 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-   <title>Onyx</title>
-   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-   <link rel="stylesheet" href="style.css">
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <title>Onyx</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
 
 </head>
+
 <body>
-    <header class="sticky-header">
-        <a class="header-logo" href="#">
-          <img src="/assets/Onyx_v16_onyx.svg" alt="Logo">
-          <h1 class="name">Onyx</h1>
-        </a>
-        
-        <a class="download-btn" href="#download">
-          <span class="material-symbols-outlined">
-            download
-            </span>
-        </a>
-      </header>     
-      
-      <section class="hero">
-        <video autoplay muted loop play-inline>
-          <source src="/assets/onyx_50000-0360.mp4" type="video/mp4">
-        </video>
-        <div class="overlay"></div>
-        <div class="container">
-          <h1>Votre nouvelle application pour vous accompagner sur le Campus de la Doua</h1>
-        </div>
-      </section>
+  <header class="sticky-header">
+    <a class="header-logo" href="#">
+      <img src="/assets/Onyx_v16_onyx.svg" alt="Logo">
+      <h1 class="name">Onyx</h1>
+    </a>
 
-      <div class="cta">
-        <h1 class="anim">5 services, 1 application</h1>
-        <p>Tous les services de Lyon 1 nécessaires au quotidien réunis dans une application cross-plateforme, légère et moderne.</p>
+    <a class="download-btn" onclick="scrollToDownload()">
+      <span class="material-symbols-outlined">
+        download
+      </span>
+    </a>
+  </header>
+
+  <section class="hero">
+    <video autoplay muted loop play-inline>
+      <source src="/assets/onyx_50000-0360.mp4" type="video/mp4">
+    </video>
+    <div class="overlay"></div>
+    <div class="container">
+      <h1>Votre nouvelle application pour vous accompagner sur le Campus de la Doua</h1>
+    </div>
+  </section>
+
+  <div class="cta">
+    <h1 class="anim">5 services, 1 application</h1>
+    <p>Tous les services de Lyon 1 nécessaires au quotidien réunis dans une application cross-plateforme, légère et
+      moderne.</p>
+  </div>
+
+  <div class="swiper-container">
+    <div class="swiper-pagination"></div>
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <h2 class="anim">Emails</h2>
+        <p>Vos emails universitaires, accessible par tout, tout le temps. Recevez et envoyez des emails depuis Onyx.
+          Marquez les plus importants, supprimez les autres.</p>
+        <img src="/assets/onyx_emails.png" alt="Emails">
       </div>
-      
-    <div class="swiper-container">
-      <div class="swiper-pagination"></div>
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <h2 class="anim">Emails</h2>
-            <p>Vos emails universitaires, accessible par tout, tout le temps. Recevez et envoyez des emails depuis Onyx. Marquez les plus importants, supprimez les autres.</p>
-            <img src="/assets/onyx_emails.png" alt="Emails">
-          </div>
-          <div class="swiper-slide">
-            <h2 class="anim">Notes</h2>
-            <p>Vos notes Tomuss dans une nouvelle présentation plus claire et moderne. Partagez vos notes meilleures notes facilement, les moins bonnes aussi d'ailleurs.</p>
-          </br>
-            <p>Ajouter vos propres coefficients à chaque note pour créer une moyenne représentative des conditions de validation de l'année pour chaque unité d'enseignement.</p>
-            <img src="/assets/onyx_notes.png" alt="Notes">
-          </div>
-          <div class="swiper-slide">
-            <h2 class="anim">Emploi du temps</h2>
-            <p>Votre emploi du temps universitaire synchronisé. Avec une carte intégrée pour trouver cet amphi que personne ne connaît, rapidement.</p>
-            </br>
-            <p>Laissez Onyx vous prévenir des modifications qui ont été apporté à votre emploi du temps dans les jours avenirs pour ne pas vous laissez surprendre.</p>
-            <img src="/assets/onyx_agenda.png" alt="Emploi du temps">
-          </div>
-          <div class="swiper-slide">
-            <h2 class="anim">Carte</h2>
-            <p>Une carte du campus, avec uniquement les informations les plus importantes, entièrement locale et fonctionnelle hors connexion.</p>
-            <img src="/assets/onyx_maps.png" alt="Cartes">
-          </div>
-          <div class="swiper-slide">
-            <h2 class="anim">Izly</h2>
-            <p>Payez avec les QR codes, même sans connexion. Pensez simplement à rechager votre compte avant, ou à demander à quelqu'un de le faire pour vous, là aussi directement depuis l'application.</p>
-            <img src="/assets/onyx_izly.png" alt="Izly">
-          </div>
-        </div>
+      <div class="swiper-slide">
+        <h2 class="anim">Notes</h2>
+        <p>Vos notes Tomuss dans une nouvelle présentation plus claire et moderne. Partagez vos notes meilleures notes
+          facilement, les moins bonnes aussi d'ailleurs.</p>
+        </br>
+        <p>Ajouter vos propres coefficients à chaque note pour créer une moyenne représentative des conditions de
+          validation de l'année pour chaque unité d'enseignement.</p>
+        <img src="/assets/onyx_notes.png" alt="Notes">
       </div>
+      <div class="swiper-slide">
+        <h2 class="anim">Emploi du temps</h2>
+        <p>Votre emploi du temps universitaire synchronisé. Avec une carte intégrée pour trouver cet amphi que personne
+          ne connaît, rapidement.</p>
+        </br>
+        <p>Laissez Onyx vous prévenir des modifications qui ont été apporté à votre emploi du temps dans les jours
+          avenirs pour ne pas vous laissez surprendre.</p>
+        <img src="/assets/onyx_agenda.png" alt="Emploi du temps">
+      </div>
+      <div class="swiper-slide">
+        <h2 class="anim">Carte</h2>
+        <p>Une carte du campus, avec uniquement les informations les plus importantes, entièrement locale et
+          fonctionnelle hors connexion.</p>
+        <img src="/assets/onyx_maps.png" alt="Cartes">
+      </div>
+      <div class="swiper-slide">
+        <h2 class="anim">Izly</h2>
+        <p>Payez avec les QR codes, même sans connexion. Pensez simplement à rechager votre compte avant, ou à demander
+          à quelqu'un de le faire pour vous, là aussi directement depuis l'application.</p>
+        <img src="/assets/onyx_izly.png" alt="Izly">
+      </div>
+    </div>
+  </div>
 
-      <section class="bandeau download">
-        <div class="bandeau-contenu">
-          <div class="bandeau-titre" id="download">
-            <h2>Essayez, <div class="anim">c'est open-source :</div></h2>
-          </div>
-          <div class="bandeau-boutons">
-            <a href="https://play.google.com/store/apps/details?id=com.e.oloid2" class="bouton">Disponible </br> sur Google Play</a>
-            <a href="https://github.com/onyx-lyon1/onyx" class="bouton">Contribuer </br> sur GitHub</a>
-            <a href="#" class="bouton">Nous rejoindre </br> sur Discord</a>
-          </div>
-        </div>
-      </section>
+  <section class="bandeau download" id="download">
+    <div class="bandeau-contenu">
+      <div class="bandeau-titre">
+        <h2>Essayez, <div class="anim">c'est open-source :</div>
+        </h2>
+      </div>
+      <div class="bandeau-boutons">
+        <a href="https://play.google.com/store/apps/details?id=com.e.oloid2" class="bouton">Disponible </br> sur Google
+          Play</a>
+        <a href="https://github.com/onyx-lyon1/onyx" class="bouton">Contribuer </br> sur GitHub</a>
+        <a href="https://discord.gg/DxJb39u" class="bouton">Nous rejoindre </br> sur Discord</a>
+      </div>
+    </div>
+  </section>
 
-      <section class="bandeau">
-        <div class="bandeau-contenu">
-          <div class="bandeau-titre">
-            <h2>A propos :</h2>
-          </div>
-          <div class="bandeau-texte">
-            <p>Onyx est une application pour les étudiants, par les étudiants. Nous avons les mêmes soucis : emploi du temps et boite mail pas adaptés aux mobiles, des informations à aller chercher à plein d'endroits différents... </p>
-          </br>
-            <p>Cette application est basée sur le travail de Clément Hervé sur Oloid, une ancienne application qui avait la même vocation.</p>
-          </div>
-        </div>
-      </section>
+  <section class="bandeau">
+    <div class="bandeau-contenu">
+      <div class="bandeau-titre">
+        <h2>A propos :</h2>
+      </div>
+      <div class="bandeau-texte">
+        <p>Onyx est une application pour les étudiants, par les étudiants. Nous avons les mêmes soucis : emploi du temps
+          et boite mail pas adaptés aux mobiles, des informations à aller chercher à plein d'endroits différents... </p>
+        </br>
+        <p>Cette application est basée sur le travail de Clément Hervé sur Oloid, une ancienne application qui avait la
+          même vocation.</p>
+      </div>
+    </div>
+  </section>
 
-   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-   <script>
-        var swiper = new Swiper('.swiper-container', {
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+  </script>
+
+  <script>
+    const texts = document.querySelectorAll('.anim');
+
+    texts.forEach(text => {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            text.classList.add('visible');
+          }
         });
-   </script>
-
-    <script>
-      const texts = document.querySelectorAll('.anim');
-
-      texts.forEach(text => {
-        const observer = new IntersectionObserver((entries) => {
-          entries.forEach(entry => {
-            if (entry.isIntersecting) {
-              text.classList.add('visible');
-            }
-          });
-        });
-
-        observer.observe(text);
       });
-    </script>
 
-   <script>
-     $(document).ready(function() {
-         $('a[href*="#"]').click(function(e) {
-             if (this.hash == "#download") {
-                 $('html, body').css('scroll-behavior', 'auto');
-                 $('html, body').animate({
-                     scrollTop: $(this.hash).offset().top
-                 }, 1000, function(){
-                     $('html, body').css('scroll-behavior', 'smooth');
-                 });
-                 return false;
-             }
-         });
-     });
-   </script>
+      observer.observe(text);
+    });
+  </script>
+
+  <script>
+    function scrollToDownload() {
+      setTimeout(function () {
+        var element = document.getElementById("download");
+        element.scrollIntoView({ behavior: 'smooth' });
+      }, 100);
+    }
+  </script>
 </body>
+
 </html>
