@@ -33,11 +33,12 @@
     left: 0;
     width: 100%;
     z-index: 999;
-    background-color: transparent;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.4),rgba(0,0,0,0.3), rgba(0,0,0,0));;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 0px;
+    padding-top: 20px;
     transition: all 0.3s ease-in-out;
   }
   
@@ -141,18 +142,34 @@
     text-align: center;
     color: #fff;
     padding-top: 5ch;
+    display: flex;
+  flex-direction: column;
+  align-items: center;
   }
   
+  .swiper-slide img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 0vh;
+    height: 80vh;
+    width: auto;
+    opacity: 1;
+    background-color: transparent;
+    position: relative;
+    bottom: 20vh;
+    z-index: -1;
+  }
+
   .swiper-slide p {
     text-align: justify;
     margin: auto;
     padding: 20px;
     max-width: 700px;
+    text-shadow: 10px 10px 10px rgb(0, 0, 0);
   }
 
   .swiper-pagination {
     position: absolute;
-    bottom: 0;
   }
   
   .swiper-pagination-bullet {
@@ -172,7 +189,7 @@
   .cta {
     color: white;
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), var(--color-primary));
-    padding: 10px;
+    padding-top: 10px;
     position: relative;
     width: 100% ;
     height: 20vh;
@@ -220,6 +237,9 @@
 
     .cta {
         text-align: center;
+    }
+
+    .cta p {
     }
   }
 
@@ -312,4 +332,12 @@
 
   .download {
     background-color: var(--color-secondary);
+  }
+
+  .anim {
+    opacity: 0;
+    transition: opacity 1s;
+  }
+  .anim.visible {
+    opacity: 1;
   }
