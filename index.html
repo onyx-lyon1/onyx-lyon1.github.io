@@ -127,5 +127,21 @@
         observer.observe(text);
       });
     </script>
+
+   <script>
+     $(document).ready(function() {
+         $('a[href*="#"]').click(function(e) {
+             if (this.hash == "#download") {
+                 $('html, body').css('scroll-behavior', 'auto');
+                 $('html, body').animate({
+                     scrollTop: $(this.hash).offset().top
+                 }, 1000, function(){
+                     $('html, body').css('scroll-behavior', 'smooth');
+                 });
+                 return false;
+             }
+         });
+     });
+   </script>
 </body>
 </html>
