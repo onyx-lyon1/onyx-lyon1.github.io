@@ -32,7 +32,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 999;
+    z-index: 10;
     background: linear-gradient(to bottom, rgba(0,0,0,0.4),rgba(0,0,0,0.3), rgba(0,0,0,0));;
     display: flex;
     justify-content: space-between;
@@ -45,6 +45,7 @@
   .header-logo {
     display: flex;
     align-items: center;
+    text-decoration: none;
   }
   
   .header-logo img {
@@ -58,6 +59,12 @@
     margin-left: 20px;
     opacity: 1;
     transition: all 0.3s ease-in-out;
+    z-index: 11;
+  }
+
+  .header-logo img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
   }
   
   @media screen and (max-width: 768px) {
@@ -204,12 +211,10 @@
     padding-right: 20px;
     padding-left: 20px;
     margin-top: 20px;
+    text-align: center;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1080px) {
-    .one-line {
-        display: none;
-    }
 
     .cta, {
         margin: 0;
@@ -222,7 +227,6 @@
         float: left;
         width: 40%;
         margin-left: 8%;
-        white-space: nowrap;
     }
 
     .cta p {
@@ -233,18 +237,19 @@
         width: 40%;
         margin-top: 0px;
         margin-right: 8%;
+        text-align: justify;
     }
   }
 
 @media screen and ((max-width: 767px) or (min-width: 1080px)) {
-    .two-lines {
-        display: none;
-        
-    }
 
     .cta {
         text-align: center;
     }
+
+    .cta p {
+      text-align: center;
+  }
   }
 
   /* Button */
@@ -302,7 +307,7 @@
     margin-right: 10px;
     margin-left: 10px;
   }
-  
+
 .bouton:last-child {
     margin-bottom: 0px;
   }
