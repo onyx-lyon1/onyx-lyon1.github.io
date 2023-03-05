@@ -266,18 +266,22 @@ body::-webkit-scrollbar {
 }
 
 .bandeau-contenu {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  max-width: 80%;
-  margin: 0 auto;
-  margin-bottom: 20px;
-  margin-top: 20px;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 80%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
 
 .bandeau-titre {
-  white-space: nowrap;
-  width: 50%;
+    white-space: nowrap;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .bandeau-titre h2 {
@@ -315,17 +319,6 @@ body::-webkit-scrollbar {
 }
 
 @media screen and (max-width: 768px) {
-
-  .bandeau-contenu {
-    flex-wrap: wrap;
-  }
-
-  .bandeau-titre {
-    width: 100%;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
 
   .bandeau-boutons {
     margin-bottom: 20px;
