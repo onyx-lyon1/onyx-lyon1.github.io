@@ -81,18 +81,33 @@
     justify-content: center;
     text-decoration: none;
     color: #fff;
-    border-radius: 50%;
+    border-radius: 30px;
     width: 60px;
     height: 60px;
     background-color: var(--color-accent);
     transition: all 0.3s ease;
     margin-right: 20px;
+    cursor: pointer;
+    position: relative;
   }
   
   
   .download-btn:hover {
-    transform: scale(1.1);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    width: 180px;
+  }
+
+  .download-btn .text, .download-btn:hover .material-symbols-outlined{
+    position: absolute;
+    opacity: 0;
+    display: flex;
+    transition: all 0.3s ease;
+  }
+
+  .download-btn:hover .text, .download-btn .material-symbols-outlined {
+    transition: all 0.3s ease;
+    opacity: 1;
   }
 
   /* Hero */
