@@ -313,6 +313,7 @@
   }
   
   .bouton {
+    position: relative;
     display: inline-flex;
     padding: 10px 20px;
     background-color: var(--color-accent);
@@ -361,8 +362,17 @@
     width: 50px;
   }
   .texte-bouton{
-    display: table-cell;
     width: 170px;
     height: 50px;
-    vertical-align: middle;
+  }
+
+  /* Footer buttons */
+
+  .footer-texte-bouton{
+    white-space: nowrap;
+    position: absolute;
+    top: 50%;
+    left: calc(50% + 25px);
+    transform: translate(-50%, -50%);
+    text-align: left;
   }
