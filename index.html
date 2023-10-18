@@ -26,6 +26,7 @@
       <span class="material-symbols-outlined">
         download
       </span>
+      <span class="text">Télécharger</span>
     </a>
   </header>
 
@@ -93,13 +94,22 @@
         </h2>
       </div>
       <div class="bandeau-boutons">
-        <a href="https://play.google.com/store/apps/details?id=fr.onyx.lyon1&pcampaignid=web_share" class="bouton">Disponible </br> sur
-          Google
-          Play</a>
-        <a href="https://apps.apple.com/app/onyx-everything-for-lyon-1/id6462440486" class="bouton">Disponible </br> sur
-         l'App Store</a>
-        <a href="https://github.com/onyx-lyon1/onyx" class="bouton">Contribuer </br> sur GitHub</a>
-        <a href="https://discord.gg/AtCc3pcaNm" class="bouton">Nous rejoindre </br> sur Discord</a>
+        <a href="https://play.google.com/store/apps/details?id=fr.onyx.lyon1&pcampaignid=web_share" class="bouton">
+          <img src="assets/google-play.svg" class="play-store"/>
+          <span class="texte-bouton">Disponible sur Google Play</span>
+        </a>
+        <a href="https://apps.apple.com/app/onyx-everything-for-lyon-1/id6462440486" class="bouton">
+          <img src="assets/app-store.svg" class="app-store"/>
+          <span class="texte-bouton">Disponible sur l'App Store</span>
+        </a>
+        <a href="https://github.com/onyx-lyon1/onyx" class="bouton">
+          <img src="assets/github.svg" class="github"/>
+          <span class="texte-bouton">Contribuer sur GitHub</span>
+        </a>
+        <a href="https://discord.gg/AtCc3pcaNm" class="bouton">
+          <img src="assets/discord.svg" class="discord"/>
+          <span class="texte-bouton">Nous rejoindre sur Discord</span>
+        </a>
       </div>
     </div>
   </section>
@@ -148,46 +158,20 @@
           <h2>Contactez-nous !</h2>
         </div>
         <div class="bandeau-boutons">
-          <a href="https://github.com/onyx-lyon1/onyx" class="bouton"> Sur GitHub</a>
-          <a href="https://discord.gg/RzFajvAB38" class="bouton">Sur Discord</a>
+          <a href="https://github.com/onyx-lyon1/onyx" class="bouton">
+            <img src="assets/github.svg" class="github" />
+            <span class="texte-bouton">Sur GitHub</span>
+          </a>
+          <a href="https://discord.gg/RzFajvAB38" class="bouton">
+            <img src="assets/discord.svg" class="discord" />
+            <div class="texte-bouton">Sur Discord</div>
+          </a>
         </div>
       </div>
   </section>
 
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-  <script>
-    var swiper = new Swiper('.swiper-container', {
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-    });
-  </script>
-
-  <script>
-    const texts = document.querySelectorAll('.anim');
-
-    texts.forEach(text => {
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            text.classList.add('visible');
-          }
-        });
-      });
-
-      observer.observe(text);
-    });
-  </script>
-
-  <script>
-    function scrollToDownload() {
-      setTimeout(function () {
-        var element = document.getElementById("download");
-        element.scrollIntoView({ behavior: 'smooth' });
-      }, 100);
-    }
-  </script>
+  <script src="script.js"></script>
 </body>
 
 </html>

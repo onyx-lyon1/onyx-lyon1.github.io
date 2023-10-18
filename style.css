@@ -81,18 +81,33 @@
     justify-content: center;
     text-decoration: none;
     color: #fff;
-    border-radius: 50%;
+    border-radius: 30px;
     width: 60px;
     height: 60px;
     background-color: var(--color-accent);
     transition: all 0.3s ease;
     margin-right: 20px;
+    cursor: pointer;
+    position: relative;
   }
   
   
   .download-btn:hover {
-    transform: scale(1.1);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    width: 180px;
+  }
+
+  .download-btn .text, .download-btn:hover .material-symbols-outlined{
+    position: absolute;
+    opacity: 0;
+    display: flex;
+    transition: all 0.3s ease;
+  }
+
+  .download-btn:hover .text, .download-btn .material-symbols-outlined {
+    transition: all 0.3s ease;
+    opacity: 1;
   }
 
   /* Hero */
@@ -102,7 +117,6 @@
     left: 0;
     height: 100vh;
   }
-  
   .hero video {
     top: 0;
     left: 0;
@@ -216,7 +230,7 @@
 
 @media screen and (min-width: 768px) and (max-width: 1080px) {
 
-    .cta, {
+    .cta {
         margin: 0;
         padding: 0;
         overflow: hidden;
@@ -239,7 +253,7 @@
         margin-right: 8%;
         text-align: justify;
     }
-  }
+}
 
 @media screen and ((max-width: 767px) or (min-width: 1080px)) {
 
@@ -252,7 +266,7 @@
   }
 
     
-  }
+}
 
   /* Button */
 
@@ -299,13 +313,13 @@
   }
   
   .bouton {
-    display: inline-block;
+    display: inline-flex;
     padding: 10px 20px;
     background-color: var(--color-accent);
     color: white;
     border-radius: 30px;
     text-decoration: none;
-    margin-bottom: 20px;
+    margin: 10px;
     transition: all 0.3s ease;
     text-align: center;
     width: 220px;
@@ -341,4 +355,14 @@
   }
   .anim.visible {
     opacity: 1;
+  }
+
+  .github, .discord, .play-store, .app-store{
+    width: 50px;
+  }
+  .texte-bouton{
+    display: table-cell;
+    width: 170px;
+    height: 50px;
+    vertical-align: middle;
   }
