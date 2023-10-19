@@ -36,7 +36,7 @@ swiper.params.speed = 1000; //1 seconde de défilement
 
 setInterval(function(){
     swiper.slideNext();
-}, 1000); // 3 sec d'intervalle entre chaque slide
+}, 3000); // 3 sec d'intervalle entre chaque slide
 
 
 swiper.on('reachEnd', function () {
