@@ -24,4 +24,23 @@ var swiper = new Swiper('.swiper-container', {
       el: '.swiper-pagination',
       clickable: true,
     },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});
+
+swiper.params.speed = 1000; //1 seconde de défilement
+
+/* SLIDE AUTO*/
+
+setInterval(function(){
+    swiper.slideNext();
+}, 3000); // 3 sec d'intervalle entre chaque slide
+
+
+swiper.on('reachEnd', function () {
+    setTimeout(function () {
+        swiper.slideTo(0);
+    }, 1000);
 });
