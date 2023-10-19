@@ -208,6 +208,15 @@
     background: var(--color-accent);
   }
 
+  .swiper-button-prev, .swiper-button-next{
+    position: absolute;
+    height: 10%;
+    width: 10%;
+    margin: 5%;
+    top: 40vh;
+    color:var(--color-accent);
+  }
+
   .cta {
     color: white;
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), var(--color-primary), var(--color-primary));
