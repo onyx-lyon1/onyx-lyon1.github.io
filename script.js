@@ -19,28 +19,29 @@ const texts = document.querySelectorAll('.anim');
       observer.observe(text);   
 });
 
-var swiper = new Swiper('.swiper-container', {
+const swiper = new Swiper('.swiper-container', {
+    direction: 'horizontal',
+    loop: true,
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
+      dynamicBullets: false,
     },
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
+    keyboard: true,
+    spaceBetween: 0,
+    grabCursor: true,
+    slidesPerView: 1,
+    effect: 'slide',
 });
 
 swiper.params.speed = 1000; //1 seconde de défilement
 
 /* SLIDE AUTO*/
 
-setInterval(function(){
-    swiper.slideNext();
-}, 3000); // 3 sec d'intervalle entre chaque slide
+swiper.autoplay.start();
 
-
-swiper.on('reachEnd', function () {
-    setTimeout(function () {
-        swiper.slideTo(0);
-    }, 1000);
-});
+swiper.params.autoplay.delay = 3000;
