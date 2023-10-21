@@ -10,6 +10,8 @@
     --light-color-secondary: #d9dde9;
     --dark-color-primary: #434b5e;
     --dark-color-secondary: #4b566a;
+
+    --highlight-color: transparent;
   }
 
   html {
@@ -230,13 +232,13 @@
   }
 
   .swiper-slide p {
-    text-align: justify;
+    text-align: center;
     margin: auto;
     padding: 20px;
     max-width: 700px;
     color: white;
     text-shadow: 10px 10px 10px rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: var(--highlight-color);
   }
 
   .swiper-pagination {

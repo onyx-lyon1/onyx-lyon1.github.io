@@ -12,13 +12,16 @@ function toggleDarkMode(){
       root.style.setProperty('--color-primary', '#e6ebf1'); //light
       root.style.setProperty('--color-secondary', '#d9dde9');
       root.style.setProperty('--font-color','black');
+      root.style.setProperty('--highlight-color', 'rgba(0,0,0,0.5)');
       
       darkMode.innerHTML = "<img src='assets/light-mode.svg' />";
     }else{
       root.style.setProperty('--color-primary', '#434b5e'); //dark
       root.style.setProperty('--color-secondary', '#4b566a');
       root.style.setProperty('--font-color','white');
-      document.querySelector('.dark-mode').innerHTML = "<img src='assets/dark-mode.svg' />";
+      root.style.setProperty('--highlight-color','transparent');
+
+      darkMode.innerHTML = "<img src='assets/dark-mode.svg' />";
     }
 }
 
