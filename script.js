@@ -5,6 +5,23 @@ function scrollToDownload() {
     }, 100);
 }
 
+function toggleDarkMode(){
+    let root = document.documentElement;
+    let darkMode = document.querySelector('.dark-mode');
+    if(root.style.getPropertyValue('--color-primary') == '#434b5e'){ 
+      root.style.setProperty('--color-primary', '#e6ebf1'); //light
+      root.style.setProperty('--color-secondary', '#d9dde9');
+      root.style.setProperty('--font-color','black');
+      
+      darkMode.innerHTML = "<img src='assets/light-mode.svg' />";
+    }else{
+      root.style.setProperty('--color-primary', '#434b5e'); //dark
+      root.style.setProperty('--color-secondary', '#4b566a');
+      root.style.setProperty('--font-color','white');
+      document.querySelector('.dark-mode').innerHTML = "<img src='assets/dark-mode.svg' />";
+    }
+}
+
 const texts = document.querySelectorAll('.anim');
 
     texts.forEach(text => {
@@ -44,4 +61,4 @@ swiper.params.speed = 1000; //1 seconde de défilement
 
 swiper.autoplay.start();
 
-swiper.params.autoplay.delay = 3000;
+swiper.params.autoplay.delay = 5000;

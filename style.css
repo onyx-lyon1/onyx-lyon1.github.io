@@ -3,6 +3,13 @@
     --color-secondary: #4b566a;
     --color-action: #E670B4;
     --color-accent: #d18770;
+
+    --font-color:white;
+
+    --light-color-primary: #e6ebf1;
+    --light-color-secondary: #d9dde9;
+    --dark-color-primary: #434b5e;
+    --dark-color-secondary: #4b566a;
   }
 
   html {
@@ -55,7 +62,7 @@
   }
   
   .header-logo .name {
-    color: #fff;
+    color: var(--font-color);
     margin-left: 20px;
     opacity: 1;
     transition: all 0.3s ease-in-out;
@@ -73,14 +80,52 @@
     }
   }
 
-  /* Button */
-  
+
+  /* Buttons */
+  .inline-buttons{
+    display: flex;
+  }
+      /* dark mode */
+  .dark-mode{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--font-color);
+    border-radius: 30px;
+    width: 60px;
+    height: 60px;
+    background-color: var(--font-color);
+    transition: background-color 2s ease;
+    margin-right: 20px;
+    cursor: pointer;
+    position: relative;
+  }
+
+  .dark-mode img{
+    width: 40px;
+    height: 40px;
+    transform: rotate(0deg);
+    transition: all 0.3s ease;
+  }
+
+  .dark-mode:hover img{
+    transform: rotate(180deg);
+    transition: all 0.3s ease;
+  }
+
+  .dark-mode:active img{
+    transform: rotate(360deg);
+    transition: all 0.3s ease;
+  }
+
+      /*download*/
   .download-btn {
     display: flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    color: #fff;
+    color: var(--font-color);
     border-radius: 30px;
     width: 60px;
     height: 60px;
@@ -144,7 +189,7 @@
   }
   
   .hero h1 {
-    color: #fff;
+    color: white;
     text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
   }
 
@@ -161,11 +206,10 @@
   
   .swiper-slide {
     text-align: center;
-    color: #fff;
     padding-top: 5ch;
     display: flex;
-  flex-direction: column;
-  align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
   
   .swiper-slide img {
@@ -181,12 +225,18 @@
     z-index: -1;
   }
 
+  .swiper-slide h2{
+    color : var(--font-color);
+  }
+
   .swiper-slide p {
     text-align: justify;
     margin: auto;
     padding: 20px;
     max-width: 700px;
+    color: white;
     text-shadow: 10px 10px 10px rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.5);
   }
 
   .swiper-pagination {
@@ -197,7 +247,7 @@
     width: 30px;
     height: 30px;
     display: inline-block;
-    background: rgb(255, 255, 255);
+    background: var(--font-color);
     cursor: pointer;
   }
   
@@ -217,7 +267,7 @@
   }
 
   .cta {
-    color: white;
+    color: var(--font-color);
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), var(--color-primary), var(--color-primary));
     padding-top: 10px;
     position: relative;
@@ -280,7 +330,7 @@
 
   .bandeau {
     background-color: var(--color-primary);
-    color: white;
+    color: var(--font-color);
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
@@ -325,7 +375,7 @@
     display: inline-flex;
     padding: 10px 20px;
     background-color: var(--color-accent);
-    color: white;
+    color: var(--font-color);
     border-radius: 30px;
     text-decoration: none;
     margin: 10px;
