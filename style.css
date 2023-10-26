@@ -313,7 +313,6 @@
         margin-right: 8%;
         text-align: justify;
     }
-
 }
 
 @media screen and ((max-width: 767px) or (min-width: 1080px)) {
@@ -334,7 +333,7 @@
   .download-btn:hover {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     transition: all 0s;
-    width: initial;
+    width: 60px;
   }
   .download-btn .text{
     display: none;
