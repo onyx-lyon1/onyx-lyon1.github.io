@@ -1,11 +1,3 @@
-document.addEventListener("DOMContentLoaded", function(event) {
-  let video = document.querySelector('.video');
-  video.play();
-  video.muted = true;
-  video.loop = true;
-  video.controls = false;
-  video.preload = 'auto';
-});
 function scrollToDownload() {
     setTimeout(function () {
       var element = document.getElementById("download");
@@ -27,8 +19,10 @@ function toggleDarkMode(){
 
       video.pause();
       src.src = "assets/onyx_light.mp4";
+      let time = video.currentTime;
       video.load();
       video.play();
+      video.currentTime = time;
 
       overlay.style.background = "rgba(255,255,255,0)";
       
@@ -41,8 +35,10 @@ function toggleDarkMode(){
 
       video.pause();
       src.src = "assets/onyx_dark.mp4";
+      let time = video.currentTime;
       video.load();
       video.play();
+      video.currentTime = time;
 
       overlay.style.background = "rgba(0,0,0,0.5)";
 
