@@ -8,7 +8,8 @@ function scrollToDownload() {
 function toggleDarkMode(){
     let root = document.documentElement;
     let darkMode = document.querySelector('.dark-mode');
-    let src = document.querySelector('.source');
+    let srcmp4 = document.querySelector('.sourcemp4');
+    let srcwebm = document.querySelector('.sourcewebm');
     let video = document.querySelector('.video');
     let overlay = document.querySelector('.overlay');
     if(root.style.getPropertyValue('--color-primary') == '#434b5e'){ 
@@ -18,7 +19,8 @@ function toggleDarkMode(){
       root.style.setProperty('--highlight-color', 'rgba(0,0,0,0.5)');
 
       video.pause();
-      src.src = "assets/onyx_light.mp4";
+      srcmp4.src = "assets/onyx_light.mp4";
+      srcwebm.src = "assets/onyx_light.webm";
       let time = video.currentTime;
       video.load();
       video.play();
@@ -34,7 +36,8 @@ function toggleDarkMode(){
       root.style.setProperty('--highlight-color','transparent');
 
       video.pause();
-      src.src = "assets/onyx_dark.mp4";
+      srcmp4.src = "assets/onyx_dark.mp4";
+      srcwebm.src = "assets/onyx_dark.webm";
       let time = video.currentTime;
       video.load();
       video.play();
