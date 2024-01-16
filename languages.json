@@ -1,0 +1,122 @@
+[
+    {
+        "id": "dl",
+        "fr" : "Télécharger",
+        "en" : "Download"
+    },
+    {
+        "id" : "welcoming-title",
+        "fr" : "Votre nouvelle application pour vous accompagner sur le Campus de la Doua",
+        "en" : "Your new app to help you on la Doua Campus"
+    },
+    {
+        "id" : "cta-title",
+        "fr" : "5 services, 1 application",
+        "en" : "5 services, 1 app"
+    },
+    {
+        "id" : "cta-p",
+        "fr" : "Tous les services de Lyon 1 nécessaires au quotidien réunis dans une application cross-plateforme, légère et moderne.",
+        "en" : "All the services of Lyon 1 necessary for everyday life gathered in a cross-platform, light and modern application."
+    },
+    {
+        "id" : "s1-title",
+        "fr" : "Emails",
+        "en" : "Emails"
+    },
+    {
+        "id" : "s1-p",
+        "fr" : "Vos emails universitaires, accessibles partout, tout le temps. Recevez et envoyez des emails depuis Onyx. Marquez les plus importants, supprimez les autres.",
+        "en" : "Your university emails, accessible everywhere, all the time. Receive and send emails from Onyx. Mark the most important, delete the others."
+    },
+    {
+        "id" : "s2-title",
+        "fr" : "Notes",
+        "en" : "Grades"
+    },
+    {
+        "id" : "s2-p1",
+        "fr" : "Vos notes Tomuss dans une nouvelle présentation plus claire et moderne.",
+        "en" : "Your Tomuss grades in a new clearer and more modern presentation."
+    },
+    {
+        "id" : "s2-p2",
+        "fr" : "Ajoutez vos propres coefficients à chaque note pour créer une moyenne représentative des conditions de validation de l'année pour chaque unité d'enseignement.",
+        "en" : "Add your own coefficients to each grade to create an average representative of the validation conditions of the year for each teaching unit."
+    },
+    {
+        "id" : "s3-title",
+        "fr" : "Emploi du temps",
+        "en" : "Schedule"
+    },
+    {
+        "id" : "s3-p1",
+        "fr" : "Votre emploi du temps universitaire synchronisé. Avec une carte intégrée pour trouver cet amphi que personne ne connaît, rapidement.",
+        "en" : "Your university schedule synchronized. With an integrated map to find this amphitheater that nobody knows, quickly."
+    },
+    {
+        "id" : "s3-p2",
+        "fr" : "Laissez Onyx vous prévenir des modifications qui ont été apportées à votre emploi du temps dans les jours à venir pour ne pas vous laisser surprendre.",
+        "en" : "Let Onyx warn you of the changes that have been made to your schedule in the days to come so as not to be surprised."
+    },
+    {
+        "id" : "s4-title",
+        "fr" : "Carte",
+        "en" : "Map"
+    },
+    {
+        "id" : "s4-p",
+        "fr" : "Une carte du campus, avec uniquement les informations les plus importantes, entièrement locale et fonctionnant hors connexion.",
+        "en" : "A map of the campus, with only the most important information, fully local and working offline."
+    },
+    {
+        "id" : "s5-title",
+        "fr" : "Izly",
+        "en" : "Izly"
+    },
+    {
+        "id" : "s5-p",
+        "fr" : "Payez avec les QR codes, même sans connexion. Pensez simplement à rechager votre compte avant, ou à demander à quelqu'un de le faire pour vous, là aussi directement depuis l'application.",
+        "en" : "Pay with QR codes, even without connection. Just remember to recharge your account before, or ask someone to do it for you, also directly from the application."
+    },
+    {
+        "id" : "bandeau-title",
+        "fr" :"Essayez, <div class='anim'>c'est open-source :</div>",
+        "en" : "Try, <div class='anim'>it's open-source :</div>"
+    },
+    {
+        "id" : "ggl-play",
+        "fr" : "Disponible sur Google Play",
+        "en" : "Available on Google Play"
+    },
+    {
+        "id" : "app-store",
+        "fr" : "Disponible sur l'App Store",
+        "en" : "Available on the App Store"
+    },
+    {
+        "id" : "github-contribution",
+        "fr" : "Contribuer sur Github",
+        "en" : "Contribute on Github"
+    },
+    {
+        "id" : "discord",
+        "fr" : "Nous rejoindre sur Discord",
+        "en" : "Join us on Discord"
+    },
+    {
+        "id" : "github-last",
+        "fr" : "Télécharger la dernière version",
+        "en" : "Download the last version"
+    },
+    {
+        "id" : "apropos-title",
+        "fr" : "À propos",
+        "en" : "About"
+    },
+    {
+        "id" : "apropos-p",
+        "fr" : "Onyx est une application faite pour les étudiants, par les étudiants. Cette application est basée sur le travail de Clément Hervé sur Oloid, une ancienne application qui avait la même vocation.",
+        "en" : "Onyx is an application made for students, by students. This application is based on the work of Clément Hervé on Oloid, a former application that had the same vocation."
+    }
+]
