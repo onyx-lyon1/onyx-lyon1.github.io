@@ -10,6 +10,7 @@
     <title>Onyx</title>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico">
     <script defer src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script defer src="script.js"></script>
 
@@ -24,7 +25,9 @@
       </a>
 
       <div class="inline-buttons">
-        <a class="dark-mode" onclick="toggleDarkMode();"><img src="assets/dark-mode.svg"/></a>
+        <a class="lang" language="FR"><img src="assets/uk-flag.png" alt="uk-flag" class="lang-img"></a>
+
+        <a class="dark-mode"><img src="assets/dark-mode.svg"/></a>
 
         <a class="download-btn" onclick="scrollToDownload();">
           <span class="material-symbols-outlined">
@@ -48,7 +51,7 @@
 
     <div class="cta">
       <h1 class="anim" id="cta-title">5 services, 1 application</h1>
-      <p class="cta-p">Tous les services de Lyon 1 nécessaires au quotidien réunis dans une application cross-plateforme, légère et
+      <p id="cta-p">Tous les services de Lyon 1 nécessaires au quotidien réunis dans une application cross-plateforme, légère et
         moderne.</p>
     </div>
 
@@ -65,7 +68,7 @@
         </div>
         <div class="swiper-slide">
           <h2 class="anim" id="s2-title">Notes</h2>
-          <p id="s2-1">Vos notes Tomuss dans une nouvelle présentation plus claire et moderne.</p>
+          <p id="s2-p1">Vos notes Tomuss dans une nouvelle présentation plus claire et moderne.</p>
           </br>
           <p id="s2-p2">Ajoutez vos propres coefficients à chaque note pour créer une moyenne représentative des conditions de
             validation de l'année pour chaque unité d'enseignement.</p>

@@ -5,7 +5,12 @@ function scrollToDownload() {
     }, 100);
 }
 
-function toggleDarkMode(){
+const darkMode = document.querySelector('.dark-mode');
+
+darkMode.addEventListener('click', toggleDarkMode, false);
+
+function toggleDarkMode(e){
+    e.preventDefault();
     let root = document.documentElement;
     let darkMode = document.querySelector('.dark-mode');
     let srcmp4 = document.querySelector('.sourcemp4');
@@ -89,3 +94,33 @@ swiper.params.speed = 1000; //1 seconde de défilement
 swiper.autoplay.start();
 
 swiper.params.autoplay.delay = 5000;
+
+//Language switcher
+
+document.querySelector('.lang').addEventListener('click', function() {
+    if(this.getAttribute('language')==="FR"){
+        this.setAttribute('language', 'EN');
+        document.querySelector('.lang-img').src = "assets/uk-flag.png";
+        switchToEnglish();
+    }
+    else{
+        this.setAttribute('language', 'FR');
+        document.querySelector('.lang-img').src = "assets/fr-flag.png";
+        switchToFrench();
+    }
+});
+let data;
+fetch('./languages.json').then(response => response.json()).then(fetchedData => { data = fetchedData; });
+
+function switchToEnglish(){
+  data.forEach(element => {
+    console.log(element.id);
+    document.getElementById(element.id).innerHTML = element.en;
+  });
+}
+
+function switchToFrench(){
+    data.forEach(element => {
+        document.getElementById(element.id).innerHTML = element.fr;
+    });
+}
