@@ -121,6 +121,22 @@
     transition: all 0.3s ease;
   }
 
+  .lang{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    margin-right: 20px;
+    background-color: var(--font-color);  
+    & > img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+  }
+
       /*download*/
   .download-btn {
     display: flex;

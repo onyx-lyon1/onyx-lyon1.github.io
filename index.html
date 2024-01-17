@@ -10,6 +10,7 @@
     <title>Onyx</title>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico">
     <script defer src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script defer src="script.js"></script>
 
@@ -24,14 +25,16 @@
       </a>
 
       <div class="inline-buttons">
-        <a class="dark-mode" onclick="toggleDarkMode();"><img src="assets/dark-mode.svg"/></a>
+        <div class="lang" language="FR"><img src="assets/uk-flag.png" alt="uk-flag" class="lang-img"></div>
 
-        <a class="download-btn" onclick="scrollToDownload();">
+        <div class="dark-mode"><img src="assets/dark-mode.svg"/></div>
+
+        <div class="download-btn" onclick="scrollToDownload();">
           <span class="material-symbols-outlined">
             download
           </span>
-          <span class="text">Télécharger</span>
-        </a>
+          <span class="text" id="dl">Télécharger</span>
+        </div>
       </div>
     </header>
 
@@ -42,13 +45,13 @@
       </video>
       <div class="overlay"></div>
       <div class="container">
-        <h1>Votre nouvelle application pour vous accompagner sur le Campus de la Doua</h1>
+        <h1 id="welcoming-title">Votre nouvelle application pour vous accompagner sur le Campus de la Doua</h1>
       </div>
     </section>
 
     <div class="cta">
-      <h1 class="anim">5 services, 1 application</h1>
-      <p>Tous les services de Lyon 1 nécessaires au quotidien réunis dans une application cross-plateforme, légère et
+      <h1 class="anim" id="cta-title">5 services, 1 application</h1>
+      <p id="cta-p">Tous les services de Lyon 1 nécessaires au quotidien réunis dans une application cross-plateforme, légère et
         moderne.</p>
     </div>
 
@@ -58,37 +61,37 @@
       <div class="swiper-pagination"></div>
       <div class="swiper-wrapper">
         <div class="swiper-slide">
-          <h2 class="anim">Emails</h2>
-          <p>Vos emails universitaires, accessibles partout, tout le temps. Recevez et envoyez des emails depuis Onyx.
+          <h2 class="anim" id="s1-title">Emails</h2>
+          <p id="s1-p">Vos emails universitaires, accessibles partout, tout le temps. Recevez et envoyez des emails depuis Onyx.
             Marquez les plus importants, supprimez les autres.</p>
           <img src="/assets/onyx_emails.png" alt="Emails">
         </div>
         <div class="swiper-slide">
-          <h2 class="anim">Notes</h2>
-          <p>Vos notes Tomuss dans une nouvelle présentation plus claire et moderne.</p>
+          <h2 class="anim" id="s2-title">Notes</h2>
+          <p id="s2-p1">Vos notes Tomuss dans une nouvelle présentation plus claire et moderne.</p>
           </br>
-          <p>Ajoutez vos propres coefficients à chaque note pour créer une moyenne représentative des conditions de
+          <p id="s2-p2">Ajoutez vos propres coefficients à chaque note pour créer une moyenne représentative des conditions de
             validation de l'année pour chaque unité d'enseignement.</p>
           <img src="/assets/onyx_notes.png" alt="Notes">
         </div>
         <div class="swiper-slide">
-          <h2 class="anim">Emploi du temps</h2>
-          <p>Votre emploi du temps universitaire synchronisé. Avec une carte intégrée pour trouver cet amphi que personne
+          <h2 class="anim" id="s3-title">Emploi du temps</h2>
+          <p id="s3-p1">Votre emploi du temps universitaire synchronisé. Avec une carte intégrée pour trouver cet amphi que personne
             ne connaît, rapidement.</p>
           </br>
-          <p>Laissez Onyx vous prévenir des modifications qui ont été apportées à votre emploi du temps dans les jours
+          <p id="s3-p2">Laissez Onyx vous prévenir des modifications qui ont été apportées à votre emploi du temps dans les jours
             à venir pour ne pas vous laisser surprendre.</p>
           <img src="/assets/onyx_agenda.png" alt="Emploi du temps">
         </div>
         <div class="swiper-slide">
-          <h2 class="anim">Carte</h2>
-          <p>Une carte du campus, avec uniquement les informations les plus importantes, entièrement locale et
+          <h2 class="anim" id="s4-title">Carte</h2>
+          <p id="s4-p">Une carte du campus, avec uniquement les informations les plus importantes, entièrement locale et
             fonctionnant hors connexion.</p>
           <img src="/assets/onyx_maps.png" alt="Cartes">
         </div>
         <div class="swiper-slide">
-          <h2 class="anim">Izly</h2>
-          <p>Payez avec les QR codes, même sans connexion. Pensez simplement à rechager votre compte avant, ou à demander
+          <h2 class="anim" id="s5-title">Izly</h2>
+          <p id="s5-p">Payez avec les QR codes, même sans connexion. Pensez simplement à rechager votre compte avant, ou à demander
             à quelqu'un de le faire pour vous, là aussi directement depuis l'application.</p>
           <img src="/assets/onyx_izly.png" alt="Izly">
         </div>
@@ -98,29 +101,28 @@
     <section class="bandeau download" id="download">
       <div class="bandeau-contenu">
         <div class="bandeau-titre">
-          <h2>Essayez, <div class="anim">c'est open-source :</div>
-          </h2>
+          <h2 id="bandeau-title">Essayez, <div class="anim">c'est open-source :</div></h2>
         </div>
         <div class="bandeau-boutons">
           <a href="https://play.google.com/store/apps/details?id=fr.onyx.lyon1&pcampaignid=web_share" class="bouton">
             <img src="assets/google-play.svg" class="play-store"/>
-            <span class="texte-bouton">Disponible sur Google Play</span>
+            <span class="texte-bouton" id="ggl-play">Disponible sur Google Play</span>
           </a>
           <a href="https://apps.apple.com/app/onyx-everything-for-lyon-1/id6462440486" class="bouton">
             <img src="assets/app-store.svg" class="app-store"/>
-            <span class="texte-bouton">Disponible sur l'App Store</span>
+            <span class="texte-bouton" id="app-store">Disponible sur l'App Store</span>
           </a>
           <a href="https://github.com/onyx-lyon1/onyx" class="bouton">
             <img src="assets/github.svg" class="github"/>
-            <span class="texte-bouton">Contribuer sur GitHub</span>
+            <span class="texte-bouton" id="github-contribution">Contribuer sur GitHub</span>
           </a>
           <a href="https://discord.gg/AtCc3pcaNm" class="bouton">
             <img src="assets/discord.svg" class="discord"/>
-            <span class="texte-bouton">Nous rejoindre sur Discord</span>
+            <span class="texte-bouton" id="discord">Nous rejoindre sur Discord</span>
           </a>
           <a href="https://github.com/onyx-lyon1/onyx/releases/latest/download/onyx-android-arm64-v8a-release.apk" class="bouton">
             <img src="assets/github.svg" class="github"/>
-            <span class="texte-bouton">Télécharger la dernière version</span>
+            <span class="texte-bouton" id="github-last">Télécharger la dernière version</span>
           </a>
         </div>
       </div>
@@ -129,54 +131,54 @@
     <section class="bandeau">
       <div class="bandeau-contenu">
         <div class="bandeau-titre">
-          <h2>A propos :</h2>
+          <h2 id="apropos-title">A propos :</h2>
         </div>
         <div class="bandeau-texte">
-          <p>Onyx est une application faite pour les étudiants, par les étudiants. Cette application est basée sur le travail de Clément Hervé sur Oloid, une ancienne application qui avait la même vocation.</p>
+          <p id="apropos-p">Onyx est une application faite pour les étudiants, par les étudiants. Cette application est basée sur le travail de Clément Hervé sur Oloid, une ancienne application qui avait la même vocation.</p>
         </div>
       </div>
 
     <div class="bandeau-contenu">
         <div class="bandeau-titre">
-          <h2>Politique de confidentialité</h2>
+          <h2 id="b1-title">Politique de confidentialité</h2>
             </div>
             <div class="bandeau-texte">
-              <p>Notre application est conçue pour fournir un accès en ligne aux services de l'université de Lyon 1. Nous prenons la protection de vos informations personnelles au sérieux et nous sommes déterminés à assurer la confidentialité de vos informations.</p>
+              <p id="b1-p1">Notre application est conçue pour fournir un accès en ligne aux services de l'université de Lyon 1. Nous prenons la protection de vos informations personnelles au sérieux et nous sommes déterminés à assurer la confidentialité de vos informations.</p>
             </br>
-              <p>Nous nous réservons le droit de modifier cette politique de confidentialité de temps à autre. Toute modification sera publiée sur cette page et prendra effet immédiatement après sa publication. Il est de votre responsabilité de consulter régulièrement cette page pour vous tenir informé des modifications apportées à notre politique de confidentialité.</p>
+              <p id="b1-p2">Nous nous réservons le droit de modifier cette politique de confidentialité de temps à autre. Toute modification sera publiée sur cette page et prendra effet immédiatement après sa publication. Il est de votre responsabilité de consulter régulièrement cette page pour vous tenir informé des modifications apportées à notre politique de confidentialité.</p>
             </div>
           </div>
 
         <div class="bandeau-contenu">
           <div class="bandeau-titre">
-            <h2>Collecte de données</h2>
+            <h2 id="b2-title">Collecte de données</h2>
           </div>
           <div class="bandeau-texte">
-            <p>Notre application ne collecte aucune information personnelle à part les données de crashlitics. Les données de connexion sont stockées uniquement sur le téléphone de l'utilisateur et ne sont communiquées qu'avec les serveurs de l'université, pour lesquels nous ne sommes pas responsables.</p>
+            <p id="b2-p">Notre application ne collecte aucune information personnelle à part les données de crashlitics. Les données de connexion sont stockées uniquement sur le téléphone de l'utilisateur et ne sont communiquées qu'avec les serveurs de l'université, pour lesquels nous ne sommes pas responsables.</p>
           </div>
         </div>
 
         <div class="bandeau-contenu">
           <div class="bandeau-titre">
-            <h2>Sécurité des données</h2>
+            <h2 id="b3-title">Sécurité des données</h2>
           </div>
           <div class="bandeau-texte">
-            <p>Nous prenons des mesures de sécurité raisonnables pour protéger vos informations personnelles contre la perte, l'utilisation abusive, l'accès non autorisé, la modification et la divulgation. Néanmoins, aucune méthode de transmission sur Internet ou de stockage électronique n'est sûre à 100 %. Par conséquent, bien que nous nous efforcions de protéger vos informations personnelles, nous ne pouvons garantir la sécurité absolue de vos informations transmises à notre application et vous le faites à vos risques et périls.</p>
+            <p id="b3-p">Nous prenons des mesures de sécurité raisonnables pour protéger vos informations personnelles contre la perte, l'utilisation abusive, l'accès non autorisé, la modification et la divulgation. Néanmoins, aucune méthode de transmission sur Internet ou de stockage électronique n'est sûre à 100 %. Par conséquent, bien que nous nous efforcions de protéger vos informations personnelles, nous ne pouvons garantir la sécurité absolue de vos informations transmises à notre application et vous le faites à vos risques et périls.</p>
           </div>
         </div>
 
         <div class="bandeau-contenu">
           <div class="bandeau-titre">
-            <h2>Contactez-nous !</h2>
+            <h2 id="b4-title">Contactez-nous !</h2>
           </div>
           <div class="bandeau-boutons">
             <a href="https://github.com/onyx-lyon1/onyx" class="bouton">
               <img src="assets/github.svg" class="github" />
-              <span class="footer-texte-bouton">Sur GitHub</span>
+              <span class="footer-texte-bouton" id="b4-p1">Sur GitHub</span>
             </a>
             <a href="https://discord.gg/RzFajvAB38" class="bouton">
               <img src="assets/discord.svg" class="discord" />
-              <div class="footer-texte-bouton">Sur Discord</div>
+              <div class="footer-texte-bouton" id="b4-p2">Sur Discord</div>
             </a>
           </div>
         </div>
