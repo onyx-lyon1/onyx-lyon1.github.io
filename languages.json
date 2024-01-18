@@ -2,171 +2,205 @@
     {
         "id": "dl",
         "fr" : "Télécharger",
-        "en" : "Download"
+        "en" : "Download",
+        "de" : "Herunterladen"
     },
     {
         "id" : "welcoming-title",
         "fr" : "Votre nouvelle application pour vous accompagner sur le Campus de la Doua",
-        "en" : "Your new app to help you on la Doua Campus"
+        "en" : "Your new app to help you on la Doua Campus",
+        "de" : "Ihre neue App, um Ihnen auf dem Campus la Doua zu helfen"
     },
     {
         "id" : "cta-title",
         "fr" : "5 services, 1 application",
-        "en" : "5 services, 1 app"
+        "en" : "5 services, 1 app",
+        "de" : "5 Dienste, 1 App"
     },
     {
         "id" : "cta-p",
         "fr" : "Tous les services de Lyon 1 nécessaires au quotidien réunis dans une application cross-plateforme, légère et moderne.",
-        "en" : "All the services of Lyon 1 necessary for everyday life gathered in a cross-platform, light and modern application."
+        "en" : "All the services of Lyon 1 necessary for everyday life gathered in a cross-platform, light and modern application.",
+        "de" : "Alle für den täglichen Bedarf erforderlichen Dienste von Lyon 1 in einer plattformübergreifenden, leichten und modernen Anwendung."
     },
     {
         "id" : "s1-title",
         "fr" : "Emails",
-        "en" : "Emails"
+        "en" : "Emails",
+        "de" : "E-Mails"
     },
     {
         "id" : "s1-p",
         "fr" : "Vos emails universitaires, accessibles partout, tout le temps. Recevez et envoyez des emails depuis Onyx. Marquez les plus importants, supprimez les autres.",
-        "en" : "Your university emails, accessible everywhere, all the time. Receive and send emails from Onyx. Mark the most important, delete the others."
+        "en" : "Your university emails, accessible everywhere, all the time. Receive and send emails from Onyx. Mark the most important, delete the others.",
+        "de" : "Ihre Universitäts-E-Mails, überall und jederzeit zugänglich. Empfangen und senden Sie E-Mails von Onyx. Markieren Sie die wichtigsten, löschen Sie die anderen."
     },
     {
         "id" : "s2-title",
         "fr" : "Notes",
-        "en" : "Grades"
+        "en" : "Grades",
+        "de" : "Noten"
     },
     {
         "id" : "s2-p1",
         "fr" : "Vos notes Tomuss dans une nouvelle présentation plus claire et moderne.",
-        "en" : "Your Tomuss grades in a new clearer and more modern presentation."
+        "en" : "Your Tomuss grades in a new clearer and more modern presentation.",
+        "de" : "Ihre Tomuss-Noten in einer neuen, klareren und moderneren Präsentation."
     },
     {
         "id" : "s2-p2",
         "fr" : "Ajoutez vos propres coefficients à chaque note pour créer une moyenne représentative des conditions de validation de l'année pour chaque unité d'enseignement.",
-        "en" : "Add your own coefficients to each grade to create an average representative of the validation conditions of the year for each teaching unit."
+        "en" : "Add your own coefficients to each grade to create an average representative of the validation conditions of the year for each teaching unit.",
+        "de" : "Fügen Sie Ihren Noten eigene Koeffizienten hinzu, um einen Durchschnitt zu erstellen, der die Validierungsbedingungen des Jahres für jede Lehrveranstaltungseinheit repräsentiert."
     },
     {
         "id" : "s3-title",
         "fr" : "Emploi du temps",
-        "en" : "Schedule"
+        "en" : "Schedule",
+        "de" : "Stundenplan"
     },
     {
         "id" : "s3-p1",
         "fr" : "Votre emploi du temps universitaire synchronisé. Avec une carte intégrée pour trouver cet amphi que personne ne connaît, rapidement.",
-        "en" : "Your university schedule synchronized. With an integrated map to find this amphitheater that nobody knows, quickly."
+        "en" : "Your university schedule synchronized. With an integrated map to find this amphitheater that nobody knows, quickly.",
+        "de" : "Ihr synchronisierter Universitätsstundenplan. Mit einer integrierten Karte, um schnell dieses Amphitheater zu finden, das niemand kennt."
     },
     {
         "id" : "s3-p2",
         "fr" : "Laissez Onyx vous prévenir des modifications qui ont été apportées à votre emploi du temps dans les jours à venir pour ne pas vous laisser surprendre.",
-        "en" : "Let Onyx warn you of the changes that have been made to your schedule in the days to come so as not to be surprised."
+        "en" : "Let Onyx warn you of the changes that have been made to your schedule in the days to come so as not to be surprised.",
+        "de" : "Lassen Sie sich von Onyx über die Änderungen informieren, die in den kommenden Tagen an Ihrem Stundenplan vorgenommen wurden, um nicht überrascht zu werden."
     },
     {
         "id" : "s4-title",
         "fr" : "Carte",
-        "en" : "Map"
+        "en" : "Map",
+        "de" : "Karte"
     },
     {
         "id" : "s4-p",
         "fr" : "Une carte du campus, avec uniquement les informations les plus importantes, entièrement locale et fonctionnant hors connexion.",
-        "en" : "A map of the campus, with only the most important information, fully local and working offline."
+        "en" : "A map of the campus, with only the most important information, fully local and working offline.",
+        "de" : "Eine Karte des Campus mit nur den wichtigsten Informationen, vollständig lokal und offline funktionierend."
     },
     {
         "id" : "s5-title",
         "fr" : "Izly",
-        "en" : "Izly"
+        "en" : "Izly",
+        "de" : "Izly"
     },
     {
         "id" : "s5-p",
         "fr" : "Payez avec les QR codes, même sans connexion. Pensez simplement à rechager votre compte avant, ou à demander à quelqu'un de le faire pour vous, là aussi directement depuis l'application.",
-        "en" : "Pay with QR codes, even without connection. Just remember to recharge your account before, or ask someone to do it for you, also directly from the application."
+        "en" : "Pay with QR codes, even without connection. Just remember to recharge your account before, or ask someone to do it for you, also directly from the application.",
+        "de" : "Zahlen Sie mit QR-Codes, auch ohne Verbindung. Denken Sie einfach daran, Ihr Konto vorher aufzuladen oder jemanden zu bitten, dies auch direkt über die Anwendung zu tun."
     },
     {
         "id" : "bandeau-title",
         "fr" :"Essayez, <div class='anim'>c'est open-source :</div>",
-        "en" : "Try, <div class='anim'>it's open-source :</div>"
+        "en" : "Try, <div class='anim'>it's open-source :</div>",
+        "de" : "Probieren Sie es aus, <div class='anim'>es ist Open Source :</div>"
     },
     {
         "id" : "ggl-play",
         "fr" : "Disponible sur Google Play",
-        "en" : "Available on Google Play"
+        "en" : "Available on Google Play",
+        "de" : "Verfügbar auf Google Play"
     },
     {
         "id" : "app-store",
         "fr" : "Disponible sur l'App Store",
-        "en" : "Available on the App Store"
+        "en" : "Available on the App Store",
+        "de" : "Verfügbar im App Store"
     },
     {
         "id" : "github-contribution",
         "fr" : "Contribuer sur Github",
-        "en" : "Contribute on Github"
+        "en" : "Contribute on Github",
+        "de" : "Auf Github beitragen"
     },
     {
         "id" : "discord",
         "fr" : "Nous rejoindre sur Discord",
-        "en" : "Join us on Discord"
+        "en" : "Join us on Discord",
+        "de" : "Treten Sie uns auf Discord bei"
     },
     {
         "id" : "github-last",
         "fr" : "Télécharger la dernière version",
-        "en" : "Download the last version"
+        "en" : "Download the last version",
+        "de" : "Die neueste Version herunterladen"
     },
     {
         "id" : "apropos-title",
         "fr" : "À propos",
-        "en" : "About"
+        "en" : "About",
+        "de" : "Über"
     },
     {
         "id" : "apropos-p",
         "fr" : "Onyx est une application faite pour les étudiants, par les étudiants. Cette application est basée sur le travail de Clément Hervé sur Oloid, une ancienne application qui avait la même vocation.",
-        "en" : "Onyx is an application made for students, by students. This application is based on the work of Clément Hervé on Oloid, a former application that had the same vocation."
+        "en" : "Onyx is an application made for students, by students. This application is based on the work of Clément Hervé on Oloid, a former application that had the same vocation.",
+        "de" : "Onyx ist eine von Studenten für Studenten entwickelte Anwendung. Diese Anwendung basiert auf der Arbeit von Clément Hervé an Oloid, einer früheren Anwendung mit derselben Bestimmung."
     },
     {
         "id" : "b1-title",
         "fr" : "Politique de confidentialité",
-        "en" : "Privacy policy"
+        "en" : "Privacy policy",
+        "de" : "Datenschutzrichtlinie"
     },
     {
         "id" : "b1-p1",
         "fr" : "Notre application est conçue pour fournir un accès en ligne aux services de l'université de Lyon 1. Nous prenons la protection de vos informations personnelles au sérieux et nous sommes déterminés à assurer la confidentialité de vos informations.",
-        "en" : "Our application is designed to provide online access to the services of the University of Lyon 1. We take the protection of your personal information seriously and are committed to ensuring the confidentiality of your information."
+        "en" : "Our application is designed to provide online access to the services of the University of Lyon 1. We take the protection of your personal information seriously and are committed to ensuring the confidentiality of your information.",
+        "de" : "Unsere Anwendung ist darauf ausgelegt, einen Online-Zugriff auf die Dienste der Universität Lyon 1 zu ermöglichen. Wir nehmen den Schutz Ihrer persönlichen Informationen ernst und sind bestrebt, die Vertraulichkeit Ihrer Informationen zu gewährleisten."
     },
     {
         "id" : "b1-p2",
         "fr" : "Nous nous réservons le droit de modifier cette politique de confidentialité de temps à autre. Toute modification sera publiée sur cette page et prendra effet immédiatement après sa publication. Il est de votre responsabilité de consulter régulièrement cette page pour vous tenir informé des modifications apportées à notre politique de confidentialité.",
-        "en" : "We reserve the right to change this privacy policy from time to time. Any changes will be posted on this page and will take effect immediately upon posting. It is your responsibility to check this page regularly to keep up to date with any changes to our privacy policy."
+        "en" : "We reserve the right to change this privacy policy from time to time. Any changes will be posted on this page and will take effect immediately upon posting. It is your responsibility to check this page regularly to keep up to date with any changes to our privacy policy.",
+        "de" : "Wir behalten uns das Recht vor, diese Datenschutzrichtlinie von Zeit zu Zeit zu ändern. Änderungen werden auf dieser Seite veröffentlicht und treten sofort nach der Veröffentlichung in Kraft. Es liegt in Ihrer Verantwortung, diese Seite regelmäßig zu überprüfen, um über Änderungen unserer Datenschutzrichtlinie auf dem Laufenden zu bleiben."
     },
     {
         "id" : "b2-title",
         "fr" : "Collecte de données",
-        "en" : "Data collection"
+        "en" : "Data collection",
+        "de" : "Datensammlung"
     },
     {
         "id" : "b2-p",
         "fr" : "Notre application ne collecte aucune information personnelle à part les données de crashlitics. Les données de connexion sont stockées uniquement sur le téléphone de l'utilisateur et ne sont communiquées qu'avec les serveurs de l'université, pour lesquels nous ne sommes pas responsables",
-        "en" : "Our application does not collect any personal information except crashlitics data. Login data is stored only on the user's phone and is only communicated with the university's servers, for which we are not responsible"
+        "en" : "Our application does not collect any personal information except crashlitics data. Login data is stored only on the user's phone and is only communicated with the university's servers, for which we are not responsible",
+        "de" : "Unsere Anwendung erfasst keine personenbezogenen Daten, außer Crashlitics-Daten. Anmeldedaten werden nur auf dem Telefon des Benutzers gespeichert und nur mit den Servern der Universität kommuniziert, für die wir nicht verantwortlich sind."
     },
     {
         "id" : "b3-title",
         "fr" : "Sécurité des données",
-        "en" : "Data security"
+        "en" : "Data security",
+        "de" : "Datensicherheit"
     },
     {
         "id" : "b3-p",
         "fr" : "Nous prenons des mesures de sécurité raisonnables pour protéger vos informations personnelles contre la perte, l'utilisation abusive, l'accès non autorisé, la modification et la divulgation. Néanmoins, aucune méthode de transmission sur Internet ou de stockage électronique n'est sûre à 100 %. Par conséquent, bien que nous nous efforcions de protéger vos informations personnelles, nous ne pouvons garantir la sécurité absolue de vos informations transmises à notre application et vous le faites à vos risques et périls.",
-        "en" : "We take reasonable security measures to protect your personal information against loss, misuse, unauthorized access, modification and disclosure. Nevertheless, no method of transmission over the Internet or electronic storage is 100% secure. Therefore, while we strive to protect your personal information, we cannot guarantee the absolute security of your information transmitted to our application and you do so at your own risk."
+        "en" : "We take reasonable security measures to protect your personal information against loss, misuse, unauthorized access, modification and disclosure. Nevertheless, no method of transmission over the Internet or electronic storage is 100% secure. Therefore, while we strive to protect your personal information, we cannot guarantee the absolute security of your information transmitted to our application and you do so at your own risk.",
+        "de" : "Wir ergreifen angemessene Sicherheitsmaßnahmen, um Ihre persönlichen Informationen vor Verlust, Missbrauch, unbefugtem Zugriff, Änderung und Offenlegung zu schützen. Dennoch ist keine Übertragungsmethode über das Internet oder elektronische Speicherung zu 100 % sicher. Daher können wir trotz unserer Bemühungen, Ihre persönlichen Informationen zu schützen, die absolute Sicherheit Ihrer an unsere Anwendung übermittelten Informationen nicht garantieren, und Sie tun dies auf eigenes Risiko."
     },
     {
         "id" : "b4-title",
         "fr" : "Contactez-nous !",
-        "en" : "Contact us !"
+        "en" : "Contact us !",
+        "de" : "Kontaktiere uns !"
     },
     {
         "id" : "b4-p1",
         "fr"  : "Sur GitHub",
-        "en" : "On GitHub"
+        "en" : "On GitHub",
+        "de" : "Auf GitHub"
     },
     {
         "id" : "b4-p2",
         "fr"  : "Sur Discord",
-        "en" : "On Discord"
+        "en" : "On Discord",
+        "de" : "Auf Discord"
     }
 ]
