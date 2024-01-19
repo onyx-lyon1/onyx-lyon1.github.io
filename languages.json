@@ -97,9 +97,9 @@
     },
     {
         "id" : "bandeau-title",
-        "fr" :"Essayez, <div class='anim'>c'est open-source :</div>",
-        "en" : "Try, <div class='anim'>it's open-source :</div>",
-        "de" : "Probieren Sie es aus, <div class='anim'>es ist Open Source :</div>"
+        "fr" :"Essayez, c'est open-source :",
+        "en" : "Try, it's open-source :",
+        "de" : "Probieren Sie es aus, es ist Open Source :"
     },
     {
         "id" : "ggl-play",
