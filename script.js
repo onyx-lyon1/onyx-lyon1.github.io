@@ -104,22 +104,27 @@ swiper.params.autoplay.delay = 5000;
 //Language switcher
 
 let opened = false;
+const arrayLanguages = ['uk','fr','de'];
 
 document.querySelector('.selected').addEventListener('click', function() {
   if(!opened){
-    document.querySelector('.lang').style.height = "200px";
+    document.querySelector('.lang').style.height = arrayLanguages.length*(200/3)+"px";
     opened = true;
     const languagesSwitch = document.querySelector('.languagesswitch');
-    languagesSwitch.style.display = "block";
+    languagesSwitch.style.display = "flex";
     document.querySelectorAll('.lang-img').forEach(e => {
       e.addEventListener('click', function(element) {
         const lg = element.target.getAttribute('language').toLowerCase();
-        if(lg == "uk"){
-          switchToEnglish();
-        }else if(lg == "fr"){
-          switchToFrench();
-        }else if(lg == "de"){
-          switchToGerman();
+        switch(lg){
+          case 'fr':
+            switchToFrench();
+            break;
+          case 'de':
+            switchToGerman();
+            break;
+          case 'uk':
+            switchToEnglish();
+            break;
         }
         reformatLanguageSwitcher(lg);
       });
@@ -133,7 +138,6 @@ document.querySelector('.selected').addEventListener('click', function() {
 });
 
 function reformatLanguageSwitcher(lg){
-  const arrayLanguages = ['uk','fr','de'];
   document.querySelector('.selected').innerHTML = "<img src='assets/"+lg+"-flag.png' />"
   document.querySelector('.lang').style.height = "60px";
   opened = false;
