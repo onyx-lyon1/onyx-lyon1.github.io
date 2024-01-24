@@ -91,6 +91,18 @@
 @media screen and (max-width: 467px){
   .inline-buttons{
     flex-direction: column-reverse;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  .lang, .languagesswitch{
+    flex-direction: row-reverse !important;
+    height: 60px !important;
+  }
+  .lang {
+    width: 200px !important;
+  }
+  .languagesswitch{
+    width: 140px !important;
   }
   .dark-mode, .download-btn{
     margin-bottom: 10px;
@@ -408,7 +420,7 @@
   }
   
   .bandeau-titre {
-    white-space: nowrap;
+    white-space: wrap;
     width: 100%;
     text-align: center;
     margin-top: 20px;
