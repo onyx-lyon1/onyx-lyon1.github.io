@@ -127,9 +127,15 @@
     },
     {
         "id" : "github-last",
-        "fr" : "Télécharger la dernière version",
-        "en" : "Download the last version",
-        "de" : "Die neueste Version herunterladen"
+        "fr" : "Dernière version",
+        "en" : "Latest version",
+        "de" : "Neueste Version"
+    },
+    {
+        "id" : "github-last-beta",
+        "fr" : "Version beta",
+        "en" : "Beta version",
+        "de" : "Beta-Version"
     },
     {
         "id" : "apropos-title",
