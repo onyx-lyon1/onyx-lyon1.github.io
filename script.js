@@ -201,10 +201,10 @@ function updateLastRelease() {
         i++;
       }
       document.getElementById("prerelease-link").href = release[0].filter(
-        (asset) => asset.name.includes("v8a")
+        (asset) => asset.name.includes("v8a"),
       );
       document.getElementById("release-link").href = release[i].filter(
-        (asset) => asset.name.includes("v8a")
+        (asset) => asset.name.includes("v8a"),
       );
     });
 }
