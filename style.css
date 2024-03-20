@@ -42,12 +42,10 @@ body::-webkit-scrollbar {
   left: 0;
   width: 100%;
   z-index: 10;
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.4),
-    rgba(0, 0, 0, 0.3),
-    rgba(0, 0, 0, 0)
-  );
+  background: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0));
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -98,17 +96,21 @@ body::-webkit-scrollbar {
     justify-content: flex-end;
     align-items: flex-end;
   }
+
   .lang,
   .languagesswitch {
     flex-direction: row-reverse !important;
     height: 60px !important;
   }
+
   .lang {
     width: 200px !important;
   }
+
   .languagesswitch {
     width: 140px !important;
   }
+
   .dark-mode,
   .download-btn {
     margin-bottom: 10px;
@@ -157,7 +159,8 @@ body::-webkit-scrollbar {
   justify-content: space-between;
   width: 60px;
   height: 60px;
-  & > .languagesswitch {
+
+  &>.languagesswitch {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -174,7 +177,8 @@ body::-webkit-scrollbar {
   display: flex;
   align-items: center;
   justify-content: center;
-  & > img {
+
+  &>img {
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -224,6 +228,7 @@ body::-webkit-scrollbar {
   left: 0;
   height: 100vh;
 }
+
 .hero video {
   top: 0;
   left: 0;
@@ -332,12 +337,10 @@ body::-webkit-scrollbar {
 
 .cta {
   color: var(--font-color);
-  background-image: linear-gradient(
-    to bottom,
-    rgba(255, 255, 255, 0),
-    var(--color-primary),
-    var(--color-primary)
-  );
+  background-image: linear-gradient(to bottom,
+      rgba(255, 255, 255, 0),
+      var(--color-primary),
+      var(--color-primary));
   padding-top: 10px;
   position: relative;
   width: 100%;
@@ -392,18 +395,22 @@ body::-webkit-scrollbar {
 }
 
 @media screen and (max-width: 768px) {
+
   .swiper-button-next,
   .swiper-button-prev {
     display: none;
   }
+
   .download-btn:hover {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     transition: all 0s;
     width: 60px;
   }
+
   .download-btn .text {
     display: none;
   }
+
   .download-btn:hover .material-symbols-outlined {
     opacity: 1;
     display: flex;
@@ -495,6 +502,7 @@ body::-webkit-scrollbar {
   opacity: 0;
   transition: opacity 1s;
 }
+
 .anim.visible {
   opacity: 1;
 }
@@ -505,6 +513,7 @@ body::-webkit-scrollbar {
 .app-store {
   width: 50px;
 }
+
 .texte-bouton {
   width: 170px;
   height: 50px;
