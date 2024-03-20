@@ -104,7 +104,14 @@ swiper.params.autoplay.delay = 5000;
 //Language switcher
 
 let opened = false;
-const arrayLanguages = ["uk", "fr", "de"];
+const arrayLanguages = ["en", "fr", "de"];
+
+let data;
+fetch("languages.json")
+  .then((response) => response.json())
+  .then((fetchedData) => {
+    data = fetchedData;
+  });
 
 document.querySelector(".selected").addEventListener("click", function () {
   if (!opened) {
@@ -115,19 +122,15 @@ document.querySelector(".selected").addEventListener("click", function () {
     languagesSwitch.style.display = "flex";
     document.querySelectorAll(".lang-img").forEach((e) => {
       e.addEventListener("click", function (element) {
-        const lg = element.target.getAttribute("language").toLowerCase();
-        switch (lg) {
-          case "fr":
-            switchToFrench();
-            break;
-          case "de":
-            switchToGerman();
-            break;
-          case "uk":
-            switchToEnglish();
-            break;
+        const lang = element.target.getAttribute("language").toLowerCase();
+
+        if (arrayLanguages.includes(lang)) {
+          data.forEach((e) => {
+            document.getElementById(e.id).innerHTML = e[lang];
+          });
         }
-        reformatLanguageSwitcher(lg);
+
+        reformatLanguageSwitcher(lang);
       });
     });
   } else {
@@ -155,31 +158,6 @@ function reformatLanguageSwitcher(lg) {
         element +
         "-flag.png' /></div>";
     }
-  });
-}
-
-let data;
-fetch("./languages.json")
-  .then((response) => response.json())
-  .then((fetchedData) => {
-    data = fetchedData;
-  });
-
-function switchToEnglish() {
-  data.forEach((element) => {
-    document.getElementById(element.id).innerHTML = element.en;
-  });
-}
-
-function switchToFrench() {
-  data.forEach((element) => {
-    document.getElementById(element.id).innerHTML = element.fr;
-  });
-}
-
-function switchToGerman() {
-  data.forEach((element) => {
-    document.getElementById(element.id).innerHTML = element.de;
   });
 }
 
