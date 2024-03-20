@@ -143,7 +143,7 @@ document.querySelector(".selected").addEventListener("click", function () {
 
 function reformatLanguageSwitcher(lg) {
   document.querySelector(".selected").innerHTML =
-    "<img src='assets/" + lg + "-flag.png' />";
+    "<img src='assets/" + lg + "-flag.webp' />";
   document.querySelector(".lang").style.height = "60px";
   opened = false;
   const languagesSwitch = document.querySelector(".languagesswitch");
@@ -156,7 +156,7 @@ function reformatLanguageSwitcher(lg) {
         element +
         "' src='assets/" +
         element +
-        "-flag.png' /></div>";
+        "-flag.webp' /></div>";
     }
   });
 }
