@@ -183,29 +183,32 @@ function switchToGerman() {
   });
 }
 
-/* last release update */
-function updateLastRelease() {
-  //download from api here https://api.github.com/repos/onyx-lyon1/onyx/releases
-  // then update the link in the a with id release-link and prerelease-link
-  fetch("https://api.github.com/repos/onyx-lyon1/onyx/releases")
-    .then((response) => response.json())
-    .then((data) => {
-      //loop through the releases
-      // the release are not in the right order, so we need to sort them
-      data.sort((a, b) => new Date(b.published_at) - new Date(a.published_at));
-      // get the first release
-      let release = data[0].assets;
-      // check if it's a prerelease
-      let i = 0;
-      while (release[i].prerelease) {
-        i++;
-      }
-      document.getElementById("prerelease-link").href = release[0].filter(
-        (asset) => asset.name.includes("v8a"),
-      );
-      document.getElementById("release-link").href = release[i].filter(
-        (asset) => asset.name.includes("v8a"),
-      );
-    });
+async function updateLastRelease() {
+  const releases = await fetch(
+    "https://api.github.com/repos/onyx-lyon1/onyx/releases"
+  ).then((response) => response.json());
+
+  releases.sort((a, b) => new Date(b.published_at) - new Date(a.published_at));
+  const latest = releases[0]?.assets;
+  const latestStable = releases.filter((r) => !r.prerelease)[0]?.assets;
+
+  if (latest) {
+    const assetUrl = latest.filter((asset) => asset.name.includes("v8a"))[0]
+      ?.browser_download_url;
+    if (assetUrl) {
+      document.getElementById("prerelease-link").href = assetUrl;
+    }
+  }
+
+  if (latestStable) {
+    const assetUrl = latestStable.filter((asset) =>
+      asset.name.includes("v8a")
+    )[0]?.browser_download_url;
+
+    if (assetUrl) {
+      document.getElementById("release-link").href = assetUrl;
+    }
+  }
 }
+
 updateLastRelease();
